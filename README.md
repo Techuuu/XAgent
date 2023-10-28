@@ -47,7 +47,7 @@ XAgent is designed with the following features:
 - **Cooperation with Human**: XAgent can collaborate with you to tackle tasks. It not only has the capability to follow your guidance in solving complex tasks on the go but it can also seek your assistance when it encounters challenges.
 
 XAgent is composed of three parts:
-- **🤖 Dispatcher** is responsible for dynamically instantiating and dispatching tasks to different agents. It allows us to add new agents and improve the agents' abilities.
+- **🤖 Dispatcher** is responsible for dynamically instantiating and dispatching tasks to different agents. It allows us to add new agents and improve the agent's abilities.
 - **🧐 Planner** is responsible for generating and rectifying plans for tasks. It divides tasks into subtasks and generates milestones for them, allowing agents to solve tasks step by step.
 - **🦾 Actor** is responsible for conducting actions to achieve goals and finish subtasks. The actor utilizes various tools to solve subtasks, and it can also collaborate with humans to solve tasks.
 
@@ -60,7 +60,7 @@ XAgent is composed of three parts:
 ## 🧰 ToolServer
 ToolServer is the server that provides XAgent with powerful and safe tools to solve tasks. It is a docker container that provides a safe environment for XAgent to run.
 Currently, ToolServer provides the following tools:
-- **📝 File Editor** provides a text editing tool to write, read, and modify files.
+- **📝 File Editor** provides a text editing tool to write, read and modify files.
 - **📘 Python Notebook** provides an interactive Python notebook that can run Python code to validate ideas, draw figures, etc.
 - **🌏 Web Browser** provides a web browser to search and visit webpages.
 - **🖥️ Shell** provides a bash shell tool that can execute any shell commands, even install programs and host services.
@@ -115,7 +115,7 @@ python run.py --task "put your task here" --model "gpt-4" --config_file "assets/
 
 5. You can load from a record to reproduce a former run, just by setting `record_dir` in config(default to `Null`). The record is a system-level recording tied to the code version of XAgent. All running-config、query、code execution statuses (including errors)、server behavior will be documented.
 
-6. We have removed all sensitive information (including API keys) from the record so you can safely share it with others. In the near future, we will introduce more granular sharing options highlighting the contributions of humans during execution.
+6. We have removed all sensitive information (including API keys) from the record so you can safely share it with others. In the near future, we will introduce more granular and easy sharing options highlighting the contributions of humans during execution.
 
    
 
@@ -144,12 +144,12 @@ Here is a figure drawn by XAgent.
 
 
 ## Case 2. Recommendation: A New Paradigm of Human-Agent Interaction
-Empowered with the unique capability to actively seek human assistance and collaborate in problem-solving, XAgent continues to redefine the boundaries of human-agent cooperation. As depicted in the screenshot below, a user sought XAgent's aid in recommending some great restaurants for a friendly gathering yet failed to provide specific details. Recognizing the insufficiency of the provided information, XAgent employed the AskForHumanHelp tool, prompting human intervention to elicit the user's preferred location, budget constraints, culinary preferences, and dietary restrictions. Armed with this valuable feedback, XAgent seamlessly generated tailored restaurant recommendations, ensuring a personalized and satisfying experience for the user and their friends.
+Empowered with the unique capability to actively seek human assistance and collaborate in problem-solving, XAgent continues to redefine the boundaries of human-agent co-operation. As depicted in the screenshot below, a user sought XAgent's aid in recommending some great restaurants for a friendly gathering yet failed to provide specific details. Recognizing the insufficiency of the provided information, XAgent employed the AskForHumanHelp tool, prompting human intervention to elicit the user's preferred location, budget constraints, culinary preferences, and dietary restrictions. Armed with this valuable feedback, XAgent seamlessly generated tailored restaurant recommendations, ensuring a personalized and satisfying experience for the user and their friends.
 
 ![Illustration of Ask for Human Help of XAgent](assets/readme/ask_for_human_help.png)
 
 ## Case 3. Training Model: A Sophisticated Tool User
-XAgent not only tackles mundane tasks but also serves as an invaluable aid in complex tasks such as model training. Here, we show a scenario where a user desires to analyze movie reviews and evaluate the public sentiment surrounding particular films. In response, XAgent promptly initiates the process by downloading the IMDB dataset to train a cutting-edge BERT model (see screenshot below), harnessing the power of deep learning. Armed with this trained BERT model, XAgent seamlessly navigates the intricate nuances of movie reviews, offering insightful predictions regarding the public's perception of various films.
+XAgent not only tackles mundane tasks but also serves as an invaluable aid in complex tasks such as model training. Here, we show a scenario where a user desires to analyze movie reviews and evaluate the public sentiment surrounding particular films. In response, XAgent promptly initiates the process by downloading the IMDB dataset to train a cutting-edge BERT model (see screenshot below), harnessing the power of deep learning. Armed with this trained BERT model, XAgent seamlessly navigates the intricate nuances of movie reviews, offering insightful and evident predictions regarding the public's perception of various films.
 
 ![bert_1](assets/readme/bert_1.png)
 ![bert_2](assets/readme/bert_2.png)
